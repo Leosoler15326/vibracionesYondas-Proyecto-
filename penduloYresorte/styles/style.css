@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+div {
+    border: 1px solid #000; /* adds a 1px solid black border to each div */
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+}
+    
+    
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 4;
+}
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+        
+
+
+.parametros {
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+}
+
+.botones {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.formulas {
+    grid-column: span 3 / span 3;
+    grid-row-start: 6;
+}
+
+
+
+
+
+
+
+/* Estilos del lienzo */
+.canvas-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(230, 24, 24, 0.5);
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+#lienzo {
+    width: 100%;
+    height: 100%;
+    background-color: #5e9177;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#pendulo {
+    width: 4px;
+    height: 100px;
+    background-color: #fa2020;
+    position: absolute;
+    bottom: 0%;
+    transform-origin: top;
+}
+
+
+/* Estilos del texto de la fórmula */
+.formula {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ContenidoFormula {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+    position: relative;
+}
+
+
+/* Estilos de los controles */
+.controls {
+    flex: 1;
+    max-width: 230px;
+    /* Máximo ancho para mantener los controles */
+    text-align: left;
+}
+
+.controls label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.controls select, .controls input[type="number"] {
+    width: calc(100% - 10px);
+    /* Ajustar el ancho para compensar el margen */
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* Estilos de los botones */
+.buttons button{
+    width: calc(100% - 10px);
+    /* Ajustar el ancho para compensar el margen */
+    justify-content: space-between;
+     /* Distribuir los botones horizontalmente */
+    max-width: 110px;
+    /* Máximo ancho para mantener los botones */
+    display: flex; /* Mostrar los botones en línea */
+}
+
+#iniciar {
+    background-color: #28a745;
+}
+#parar {
+    background-color: #dc3545;
+}
+
+#grafica, #grafica2{
+    width: 95%;
+    /* O ajusta un ancho específico */
+    height: 80%;
+    /* O ajusta una altura específica */
+    background-color: #f0f0f0;
+    border: 1px solid #bddd98;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* Agrega otros estilos según tus preferencias */
+}
+

@@ -1,14 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Péndulo de Torsión</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
 </head>
+
 <body>
+    <header>
+        <h1>Péndulo de Torsión</h1>
+    </header> 
+
+    <main>
+        
+        <div class="parent">
+            <div class="div1">
+                <div class="controls">
+                    <label for="tipo_movimiento">Tipo de Movimiento:</label>
+                    <select id="tipo_movimiento">
+                        <option value="mas">Movimiento Armónico Simple</option>
+                    </select>
+                </div>
+            </div>
+            <div class="div2">
+                <div class="canvas-container">
+                    <div id="lienzo">
+                        <div id="pendulo"></div>
+                    </div>
+                </div>
+                <div id="Formula">
+                    <p id="ContenidoFormula">Formula</p>
+                </div>
+            </div>
+            
+            <div class="div4">
+                <div id="parametros">
+                    <h3>Parámetros</h3>
+                    <div class="parametro">
+                        <label for="constante_torsion">k (Constante de Torsión):</label>
+                        <input type="number" id="constante_torsion" value="0">
+                    </div>
+                    <div class="parametro">
+                        <label for="masa">m (Masa):</label>
+                        <input type="number" id="masa" min="0.5" max="10" step="0.01" value="0.10">
+                    </div>
+                    <div class="parametro">
+                        <label for="radio">r (Radio):</label>
+                        <input type="number" id="radio" min="0.1" max="0.6" step="0.01" value="0.10">
+                    </div>
+                    
+                    <div class="parametro">
+                        <label for="anguloInicial">θ<sub>0</sub> (Ángulo Inicial):</label>
+                        <input type="number" id="anguloInicial" value="0">
+                    </div>
 
 
+
+
+                    <div id="otros_parametros_velocidadInicial" style="display:none;">
+                        <div class="parametro">
+                            <label for="velocidadInicial">V<sub>0</sub> (Velocidad Inicial):</label>
+                            <input type="number" id="velocidadInicial" value="0">
+                        </div>
+                    </div>
+    
+                    <div id="otros_parametros_amortiguado" style="display:none;">
+                        <div class="parametro">
+                            <label for="constante_amortiguamiento">β (Constante de Amortiguamiento):</label>
+                            <input type="number" id="constante_amortiguamiento" value="0">
+                        </div>
+                    </div>
+    
+                    <div id="otros_parametros_forzado" style="display:none;">
+                        <div class="parametro">
+                            <label for ="fuerza_Forzado">F<sub>0</sub> (Fuerza Externa):</label>
+                            <input type="number" id="fuerza_Forzado" value="0">
+                            <label for="frecuencia_Forzado">ω<sub>f</sub> (Frecuencia de la Fuerza Externa):</label>
+                            <input type="number" id="frecuencia_Forzado" value="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="button-iniciar">
+                        <button id="iniciar">Iniciar</button> 
+                    </div>
+                    <div class="button-parar">
+                        <button id="parar">Parar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="div5">
+                <h3></h3>
+                <div id="grafica"></div>
+            
+            </div>
+            <div class="div6">
+                <div id="grafica2"></div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/scripts.js"></script>
+    
 </body>
+
 </html>
