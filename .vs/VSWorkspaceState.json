@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\penduloYresorte"
+    "\\penduloYresorte",
+    "\\penduloYresorte\\scripts",
+    "\\penduloYresorte\\styles"
   ],
-  "SelectedNode": "\\penduloYresorte\\style.css",
+  "SelectedNode": "\\penduloYresorte\\scripts\\scripts.js",
   "PreviewInSolutionExplorer": false
 }
