@@ -49,11 +49,11 @@ document.getElementById("radio").addEventListener("input", function() {
 function updatePendulum(radio) {
     // Actualizar el péndulo con el nuevo valor del radio
     let newWidth = penduloHeight + 50 * radio;
-    document.getElementById("pendulo").style.height = newWidth + "px";
+    //document.getElementById("pendulo").style.height = newWidth + "px";
     
     let canvasSize = newWidth * 2; // Ajustar el tamaño del círculo al doble del nuevo ancho
-    document.querySelector(".canvas-container").style.width = canvasSize + "px";
-    document.querySelector(".canvas-container").style.height = canvasSize + "px";
+    //document.querySelector(".canvas-container").style.width = canvasSize + "px";
+    //document.querySelector(".canvas-container").style.height = canvasSize + "px";
     pendulo.style.transform = "rotate(" + theta + "rad)";
 }
 
@@ -432,8 +432,8 @@ function updatePendulum(radio) {
             yaxis: {
                 title: "Energía (J)",
             },
-            width: 700, // Add this line
-            height: 350, // Add this line
+            width: 628, // Add this line
+                height: 300, // Add this line
             },
         };
         if ((tipoMovimientoSelect.value === "mas") || ((tipoMovimientoSelect === "amortiguado") && (banderaSubamortiguado === true))) {
@@ -466,8 +466,8 @@ function updatePendulum(radio) {
                 title: "Ángulo (deg)",
                 //range: [-1* Math.PI, Math.PI],
                 },
-                width: 700, // Add this line
-                height: 350, // Add this line
+                width: 628, // Add this line
+                height: 300, // Add this line
             },
         };
         Plotly.newPlot(graficaCanvas, chart.data, chart.layout);

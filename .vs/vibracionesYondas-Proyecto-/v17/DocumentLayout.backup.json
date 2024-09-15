@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:penduloYresorte\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\vibracionesYondas-Proyecto-\\penduloYresorte\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:penduloYresorte\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\vibracionesYondas-Proyecto-\\penduloYresorte\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:penduloYresorte\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Documents\\GitHub\\vibracionesYondas-Proyecto-\\penduloYresorte\\scripts\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:penduloYresorte\\scripts\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +22,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "scripts.js",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\vibracionesYondas-Proyecto-\\penduloYresorte\\scripts\\scripts.js",
+              "RelativeDocumentMoniker": "penduloYresorte\\scripts\\scripts.js",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\vibracionesYondas-Proyecto-\\penduloYresorte\\scripts\\scripts.js",
+              "RelativeToolTip": "penduloYresorte\\scripts\\scripts.js",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-14T18:44:31.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\vibracionesYondas-Proyecto-\\penduloYresorte\\styles\\style.css",
+              "RelativeDocumentMoniker": "penduloYresorte\\styles\\style.css",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\vibracionesYondas-Proyecto-\\penduloYresorte\\styles\\style.css",
+              "RelativeToolTip": "penduloYresorte\\styles\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-14T18:44:29.01Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -32,22 +62,9 @@
               "RelativeDocumentMoniker": "penduloYresorte\\index.html",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\vibracionesYondas-Proyecto-\\penduloYresorte\\index.html",
               "RelativeToolTip": "penduloYresorte\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-09-01T16:20:35.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\vibracionesYondas-Proyecto-\\penduloYresorte\\style.css",
-              "RelativeDocumentMoniker": "penduloYresorte\\style.css",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\vibracionesYondas-Proyecto-\\penduloYresorte\\style.css",
-              "RelativeToolTip": "penduloYresorte\\style.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-01T16:23:14.08Z",
               "EditorCaption": ""
             }
           ]

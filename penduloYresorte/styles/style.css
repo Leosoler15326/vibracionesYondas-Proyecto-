@@ -22,16 +22,19 @@ div {
     align-content:center;
     align-items:center;
 }
-#gridBox{
+#gridBox {
     background-color: lightgray;
     height: 350px;
-    overflow: hidden;
-    margin:5px;
+    width: 100%;
+    margin: 5px;
+}
+#segment {
+    display:flex;
+    /*responsive display:block */
 }
 
-
 .parent {
-    display: grid;
+    display:block;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 2px;
@@ -46,6 +49,7 @@ div {
     grid-column: span 2 / span 2;
     grid-column-start: 2;
     max-height:80px;
+    width:100%;
 }
 
 .div2 {
@@ -64,12 +68,16 @@ div {
 .div5 {
     grid-column: span 2 / span 2;
     grid-row-start: 4;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .div6 {
     grid-column: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 4;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
         
 
@@ -114,10 +122,7 @@ h3 {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(230, 24, 24, 0.5);
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 0 auto;
     
 }
 
@@ -163,8 +168,7 @@ h3 {
 .controls {
     flex: 1;
     max-width: 230px;
-    /* Máximo ancho para mantener los controles */
-    text-align: left;
+    text-align: center;
     margin:auto;
 }
 
@@ -204,17 +208,23 @@ h3 {
     background-color: #dc3545;
 }
 
-#grafica, #grafica2{
-    width: 95%;
-    /* O ajusta un ancho específico */
-    height: 80%;
-    /* O ajusta una altura específica */
-    background-color: #f0f0f0;
-    border: 1px solid #bddd98;
-    border-radius: 3px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    /* Agrega otros estilos según tus preferencias */
+#grafica, #grafica2 {
+    height:100%;
+    width:min-content;
+    margin:auto;
 }
 
+/*--------------------------RESPONSIVE-----------------------*/
+@media (max-width: 60em) {
+    #segment {
+        display: block;
+        /*responsive display:block */
+    }
+    .parent {
+        width:92%;
+    }
+    #gridBox {
+        width: 100%;
+        margin: 5px;
+    }
+}
