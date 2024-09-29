@@ -27,6 +27,11 @@
                     <label for="movement">Puede elegir movimientos:</label>
                     <select id="movement">
                         <option value="simple">Movimiento Armónico Simple</option>
+                        <option value="amortiguado">Movimiento Amortiguado</option>
+                <option value="forzado_sin_amortiguamiento">Movimiento Forzado Sin Amortiguamiento</option>
+                <option value="forzado_amortiguado">Movimiento Forzado Amortiguado</option>
+                        <option value="critico">........................</option>
+
                         <option value="critico">Amortiguamiento Crítico</option>
                         <option value="sobreamortiguado">Amortiguamiento Sobreamortiguado</option>
                     </select>
@@ -38,14 +43,20 @@
         <div class="section" id="section-2">
             <h2>Modificar Parámetros</h2>
             
-            <label for="length">Longitud del péndulo (l):</label>
-            <input type="number" id="length" value="1">
+            <label for="longitudPendulo">Longitud del péndulo (l):</label>
+            <input type="number" id="longitudPendulo" value="1">
 
-            <label for="mass">Masa del péndulo (m):</label>
-            <input type="number" id="mass" value="1">
+            <label for="masaPendulo">Masa del péndulo (m):</label>
+            <input type="number" id="masaPendulo" value="1">
 
-            <label for="springConstant">Constante elástica del resorte (k):</label>
-            <input type="number" id="springConstant" value="3">
+            <label for="constanteElastica">Constante elástica del resorte (k):</label>
+            <input type="number" id="constanteElastica" value="3">
+            
+            <label for="anguloInicial">angulo inicial(Po):</label>
+            <input type="number" id="anguloInicial" value="0.24">
+
+            <label for="velocidadInicialPendulo">Velocidad Angular Inicial(0'o):</label>
+            <input type="number" id="velocidadInicialPendulo" value="0">
 
             <button id="calculateBtn">Generar Simulación</button>
         </div>
@@ -64,7 +75,10 @@
 
         <!-- Parte 4: Cuarta sección -->
         <div class="section" id="section-4">
-            <h2>Sección 4</h2>
+            <h2>Formulas M.A.S</h2>
+            <div id="Formula">
+                <p id="ContenidoFormula">Formula</p>
+            </div>
         </div>
     </div>
 
