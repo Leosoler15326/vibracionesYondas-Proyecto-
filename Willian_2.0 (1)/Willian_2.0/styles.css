@@ -38,7 +38,7 @@ body {
 
 .spring {
     position: absolute;
-    top: 50%;
+    top: 67%;
     left: 0;
     height: 3px;
     background-color: blue;
@@ -139,7 +139,17 @@ canvas {
     padding: 10px;
     position: relative;
 }
-
+/*----------------------------------------------*/
+.span{
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f5f1f1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
 
 
 

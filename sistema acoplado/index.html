@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación Péndulo Resorte</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluir Chart.js para generar la gráfica -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Parte 1: graficas y resultados -->
+    <div class="section" id="section-1">
+        <div class="container">
+            <div class="divider">
+                <h2>Dibujo</h2>
+                <p>.</p>
+                <canvas id="lienzo" width="600" height="600"> </canvas>
+
+            </div>
+            <div class="divider">
+                <h2>Grafica</h2>
+                <p>angulo vz tiempo</p>
+                <canvas id="graficaAnguloTiempo" width="600" height="600"></canvas>
+            </div>
+        </div>
+        <h2>Formula</h2>
+        <div id="Formula">
+            <p id="ecuacionMovimiento" class="ecuacionMovimiento">A =</p>
+            <p id="ecuacionMovimiento2" class="ecuacionMovimiento">B =</p>
+        </div>
+    </div>
+
+    <!-- Parte 2: Controles para modificar los valores -->
+    <div class="section" id="section-2">
+        <h2>Modificar Parámetros</h2>
+
+        <label for="longitudPendulo">Longitud del péndulo (l) en (m):<span class="span" id="longitudPendulo-value">2</span></label>
+        <input type="range" id="imputLongitudPendulo" min="0" max="5" step="0.01" value="2" class="custom-range">
+
+        <label for="masaPendulo1">Masa del péndulo A (m1) en (kg):<span class="span" id="masaPendulo1-value">1</span></label>
+        <input type="range" id="imputMasaPendulo1" min="0" max="10" step="0.01" value="1" class="custom-range">
+
+        <label for="masaPendulo2">Masa del péndulo B (m2) en (kg):<span class="span" id="masaPendulo2-value">1</span></label>
+        <input type="range" id="imputMasaPendulo2" min="0" max="10" step="0.01" value="1" class="custom-range">
+
+        <label for="alturaResorte">Altura del resorte 1 (% de la longitud del pendulo) en (m):<span class="span" id="alturaResorte-value">100% = 2m</span> </label>
+        <input type="range" id="inputAlturaResorte" min="0" max="1" step="0.01" value="1" class="custom-range">
+
+        <label for="constanteElastica1">Constante elástica del resorte (k1) en (N/m):<span class="span" id="constanteElastica1-value">1</span> </label>
+        <input type="range" id="imputConstanteElastica1" min="0" max="20" step="0.01" value="1" class="custom-range">
+
+        <label for="constanteElastica2">Constante elástica del resorte (k2) en (N/m):<span class="span" id="constanteElastica2-value">1</span> </label>
+        <input type="range" id="imputConstanteElastica2" min="0" max="20" step="0.01" value="1" class="custom-range">
+
+        <label for="AnguloA">angulo inicial pendulo A en (rad):<span class="span" id="anguloA-value">0</span> </label>
+        <input type="range" id="imputAnguloA" min="-0.24" max="0.24" step="0.01" value="0" class="custom-range">
+
+        <label for="AnguloB">angulo inicial pendulo B en (rad):<span class="span" id="anguloB-value">0.24</span> </label>
+        <input type="range" id="imputAnguloB" min="-0.24" max="0.24" step="0.01" value="0.24" class="custom-range">
+
+        <button id="calculateBtn">Generar Simulación</button>
+        <button id="botonAlternarSolucion">Cambiar Grafica</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
